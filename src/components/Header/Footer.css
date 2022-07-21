@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap");
+
+.footer {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(144, 142, 173, 1) 0%,
+    rgba(66, 162, 88, 1) 35%,
+    rgba(140, 50, 21, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+}
+.footer .details h3,
+h4,
+h5 {
+  padding-top: 2px;
+}
+
+.footer .details {
+  font-size: 20px;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Dosis", sans-serif;
+}
+
+.details > p {
+  font-size: small;
+  font-family: "Edu VIC WA NT Beginner", cursive !important;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  footer .details {
+    font-size: 15px !important;
+  }
+  .details > h3 {
+    text-decoration: underline;
+  }
+  .details > p {
+    margin-top: 10px;
+    font-weight: 500;
+  }
+}

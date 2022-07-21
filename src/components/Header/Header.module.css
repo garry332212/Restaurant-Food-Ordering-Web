@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(155, 207, 166, 1) 21%,
+    rgba(210, 72, 72, 1) 100%
+  );
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); /* this gives the nice shaddow effect */
+}
+header > h1 {
+  font-size: 30px;
+  font-family: "Fascinate", cursive;
+}
+
+/* get responsive image */
+.header > img {
+  position: absolute;
+  height: 60px;
+  bottom: 10px;
+  margin-left: 12rem;
+}
+
+.header_right {
+  display: flex;
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: 25rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-6rem) translateX(-1rem);
+}
+
+.header_right .MuiSvgIcon-root {
+  color: #291d1d;
+}
+.header_right .MuiSvgIcon-root:hover {
+  color: rgb(240, 5, 5) !important;
+}
+
+.header_right .button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: transparent;
+  padding: 0.35rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  position: relative;
+  bottom: 10%;
+  right: 2%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(227, 236, 246, 1) 6%,
+    rgba(241, 238, 235, 1) 50%,
+    rgba(215, 230, 252, 1) 100%
+  );
+}
+
+.button:hover,
+.button:active {
+  background-color: #d31a1a;
+}
+
+.header_right .button .icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 1.5rem;
+}
+
+.header_right .badge {
+  background: rgb(0, 0, 0);
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  /* margin-left: 1rem; */
+  font-weight: bold;
+  color: white;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background: rgb(31, 92, 161);
+}
+
+.bump {
+  animation: bump 500ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .header > h1 {
+    font-size: 25px;
+    position: relative;
+    right: 20px;
+    font-family: "Fascinate", cursive;
+  }
+  .header {
+    position: sticky;
+  }
+
+  .main-image img {
+    width: 110%;
+    object-fit: cover;
+    transform: rotateZ(-5deg) translateY(-2rem) translateX(-1rem);
+    margin-right: 10px !important;
+  }
+
+  .header_right .button {
+    padding: 0.35rem 0.8rem !important;
+    margin-right: -30px;
+    font-weight: 400 !important;
+  }
+
+  .header > img {
+    position: relative;
+    height: 55px;
+    bottom: 1px;
+    margin-left: -2rem;
+  }
+}

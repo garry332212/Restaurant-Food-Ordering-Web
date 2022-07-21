@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,300&display=swap');
+
+.mainFile {
+  margin-top: 20px;
+}
+.mainFile > h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 20px;
+}
+.mainFile .heading {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 23px;
+  font-family: "Rajdhani", sans-serif;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.infoSection {
+  text-align: left;
+
+}
+.infoSection > p {
+  font-size: 25px;
+  font-family: 'Mali', cursive;
+  margin: 2px 20px
+}
+.infoSection .menu{
+    text-align: center;
+}
+.secondPargaraph{
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+ 
+
+  .mainFile .heading {
+    font-size: 15px;
+    margin: 5%;
+  }
+
+  .infoSection > p {
+    font-size: 15px;
+  }
+}
+
+
