@@ -47,21 +47,13 @@ const Checkout = (props) => {
       isValid.cityIsValid;
 
     if (formIsValid) {
-      console.log(
-        formInputs.name,
-        formInputs.street,
-        formInputs.postal,
-        formInputs.city
-      );
       props.onConfrim({
         name: formInputs.name,
         street: formInputs.street,
         postal: formInputs.postal,
         city: formInputs.city,
       });
-    } else {
-      console.log("Eneter All The Details");
-    }
+   
   };
   const inavlid = {
     nameError: `${classes.control} ${

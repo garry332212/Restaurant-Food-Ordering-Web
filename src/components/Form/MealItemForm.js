@@ -12,14 +12,9 @@ const MealItemForm = (props) => {
     event.preventDefault();
     const var1 = inputRef.current.value; // this is a string value , lets convert it
     const enteredAmount = +var1;
-    console.log(enteredAmount);
 
     //Step 2. lets do the validation
-    if (
-      var1.trim().length === 0 ||
-      enteredAmount < 1 ||
-      enteredAmount > 5
-    ) {
+    if (var1.trim().length === 0 || enteredAmount < 1 || enteredAmount > 5) {
       setAmountValid(false);
       return; //will not continue stop the excustion cause its empty
     }
