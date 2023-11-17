@@ -13,7 +13,7 @@ const AvailableMeals = () => {
     setIsLoading(true);
     const fetchMeals = async () => {
       const response = await fetch(
-        "https://react-http-4dcfb-default-rtdb.firebaseio.com/movies/meals.json"
+        "https://react-http-4dcfb-default-rtdb.firebaseio.com/meals.json"
       );
 
       if (!response.ok) {
@@ -26,6 +26,7 @@ const AvailableMeals = () => {
       for (const key in data) {
         loaddedMeals.push({
           id: key,
+          pic: data[key].pic,
           name: data[key].name,
           description: data[key].description,
           price: data[key].price,
@@ -46,6 +47,7 @@ const AvailableMeals = () => {
     <MealItem
       id={meal.id} // this is new!
       key={meal.id}
+      pic={meal.pic}
       name={meal.name}
       description={meal.description}
       price={meal.price}

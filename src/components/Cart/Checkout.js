@@ -55,6 +55,7 @@ const Checkout = (props) => {
       });
    
   };
+}
   const inavlid = {
     nameError: `${classes.control} ${
       fromInputsValid.name ? " " : classes.invalid
@@ -101,5 +102,6 @@ const Checkout = (props) => {
     </form>
   );
 };
+
 
 export default Checkout;

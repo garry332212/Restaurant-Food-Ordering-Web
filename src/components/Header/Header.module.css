@@ -17,6 +17,7 @@
   align-items: center;
   padding: 0 10%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); /* this gives the nice shaddow effect */
+  z-index: 999;
 }
 header > h1 {
   font-size: 30px;

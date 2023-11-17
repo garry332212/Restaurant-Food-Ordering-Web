@@ -11,6 +11,7 @@ const MealItem = (props) => {
     cartCtx.addItem({
       id: props.id,
       name: props.name,
+      pic:props.pic,
       amount: amount,
       price: props.price,
     });
@@ -19,6 +20,7 @@ const MealItem = (props) => {
     <li className="meal">
       <div>
         <h3>{props.name}</h3>
+        <img src={props.pic} height={"50px"} alt="" />
         <div className="description">{props.description}</div>
         <div className="price">{price}</div>
       </div>

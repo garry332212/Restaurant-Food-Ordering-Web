@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@600&display=swap');
 .meals {
     max-width: 60rem;
-    width: 90%;
     margin: 2rem auto;
     animation: meals-appear 1s ease-out forwards;
     text-align: center;
